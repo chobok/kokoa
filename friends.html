@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - KakaoTalk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5e30b89af1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__left">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__center">
+            <span>21:23</span>
+        </div>
+        <div class="status-bar__right">
+            <i class="fa-solid fa-camera-rotate"></i>
+            <span>100%</span>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span><i class="fa-solid fa-music"></i></span>
+            <span class="screen-header__gear">
+                <a href="settings.html" style="color: inherit;">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <main class="friends-screen">
+        <div class="friends__display-link">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Friends' Names Display</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="user-component user-component--xl">
+            <div class="user-component__column">
+                <img src="data:image/jpeg;base64,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"
+                    alt="musk" class="user-component__avatar user-component__avatar--xl">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">To the Moon</h4>
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+
+        <div class="friends__channel-header">
+            <span>Channel</span>
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/service/b5148d08017800001.png" alt="channel"
+                    class="user-component__avatar user-component__avatar--sm">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Channel</h4>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <span class="user-component__time">2 <i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="fa-regular fa-comment"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__notification dot"></span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

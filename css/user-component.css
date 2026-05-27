@@ -1,0 +1,81 @@
+.user-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.user-component__column:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.user-component__avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.user-component__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.user-component__time {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.user-component--xl .user-component__avatar--xl {
+    width: 85px;
+    height: 85px;
+    border-radius: 30px;
+}
+.user-component--xl .user-component__title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.user-component__avatar--sm {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.user-component__subtitle {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.user-component__column:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+.user-component__time {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 7px; 
+    display: block;
+}
+
+.badge {
+    background-color: tomato;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}

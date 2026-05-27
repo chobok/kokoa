@@ -1,0 +1,54 @@
+.nav {
+    /* 화면 맨 아래에 고정 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: #2e363e;
+    font-size: 28px;
+    text-decoration: none; 
+}
+
+.nav__btn {
+    position: relative;
+}
+
+.nav__notification.badge {
+    background-color: tomato;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+}
+
+.nav__notification.dot {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}

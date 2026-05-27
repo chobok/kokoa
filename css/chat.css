@@ -1,0 +1,212 @@
+#chat-screen {
+    background-color: #abc1d1;
+    padding-bottom: 350px; 
+    box-sizing: border-box;
+}
+
+#chat-screen .status-bar,
+#chat-screen .alt-header {
+    background-color: #abc1d1;
+}
+
+.main-chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.chat__timestamp {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.message__avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 40%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.message__author {
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.message__info {
+    display: flex;
+    align-items: flex-end; 
+}
+
+.message__bubble {
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 0px; 
+    margin-right: 5px;
+}
+
+.message__time {
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
+
+.message-row--own .message__bubble {
+    background-color: #fee500;
+    border-top-right-radius: 0px; 
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #d1d4da;
+    z-index: 100;
+}
+
+.reply {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 10px;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.reply__column:first-child {
+    width: 10%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.reply__column.input-container {
+    width: 90%;
+    position: relative;
+}
+
+.reply input {
+    padding: 8px 75px 8px 15px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-icons {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%); 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smile-icon {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.input-icons button {
+    background-color: #fee500;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard {
+    padding: 8px 3px 20px 3px; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.keyboard__row {
+    display: flex;
+    justify-content: center;
+    gap: 6px; 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 3px;
+}
+
+.keyboard__row:nth-child(1) .key,
+.keyboard__row:nth-child(2) .key {
+    flex: 1;
+}
+.keyboard__row:nth-child(2) {
+    padding: 0 20px;
+}
+.row-special {
+    display: grid;
+    gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.keyboard__row:nth-child(3) { 
+    grid-template-columns: 1.5fr repeat(7, 1fr) 1.5fr;
+}
+.keyboard__row:nth-child(4) { 
+    grid-template-columns: 2fr 1.5fr 5fr 2.5fr;
+}
+.key {
+    background-color: white;
+    border-radius: 5px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    -webkit-user-select: none; user-select: none; 
+}
+.key--special {
+    background-color: #abb3bc;
+    font-size: 16px;
+    text-transform: none;
+}
+.key--space {
+    text-transform: none;
+    font-size: 16px;
+    color: rgba(0,0,0,0.5);
+}
+.key--shift i, .key--delete i, .key--globe i {
+    font-size: 18px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - KakaoTalk</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5e30b89af1.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__left">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__center">
+            <span>21:28</span>
+        </div>
+        <div class="status-bar__right">
+            <i class="fa-solid fa-camera-rotate"></i>
+            <span>100%</span>
+            <i class="fa-solid fa-battery-full"></i>
+        </div>
+    </div>
+
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html"><i class="fa-solid fa-angle-left fa-lg"></i></a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Elon Musk</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span style="margin-left: 20px;"><i class="fa-solid fa-bars fa-lg"></i></span>
+        </div>
+    </header>
+
+    <main class="main-chat">
+        <div class="chat__timestamp">
+            Tuesday, June 30, 2020
+        </div>
+
+        <div class="message-row">
+            <img src="https://wimg.sedaily.com/news/legacy/2018/05/26/1RZOL58HII_6.jpg" alt="musk"
+                class="message__avatar">
+            <div class="message__content">
+                <span class="message__author">Elon Musk</span>
+                <div class="message__info">
+                    <span class="message__bubble">gazuaaaaaaaa</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row message-row--own">
+            <div class="message__content">
+                <div class="message__info">
+                    <span class="message__bubble">gazuaaaaaaaa</span>
+                    <span class="message__time">21:27</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="fixed-bottom">
+        <form class="reply">
+            <div class="reply__column">
+                <i class="fa-regular fa-square-plus fa-lg"></i>
+            </div>
+            <div class="reply__column input-container">
+                <input type="text" placeholder="To the moon!" />
+                <div class="input-icons">
+                    <i class="fa-regular fa-face-smile fa-lg smile-icon"></i>
+                    <button>
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="keyboard">
+            <div class="keyboard__row">
+                <div class="key">q</div>
+                <div class="key">w</div>
+                <div class="key">e</div>
+                <div class="key">r</div>
+                <div class="key">t</div>
+                <div class="key">y</div>
+                <div class="key">u</div>
+                <div class="key">i</div>
+                <div class="key">o</div>
+                <div class="key">p</div>
+            </div>
+            <div class="keyboard__row">
+                <div class="key">a</div>
+                <div class="key">s</div>
+                <div class="key">d</div>
+                <div class="key">f</div>
+                <div class="key">g</div>
+                <div class="key">h</div>
+                <div class="key">j</div>
+                <div class="key">k</div>
+                <div class="key">l</div>
+            </div>
+            <div class="keyboard__row row-special">
+                <div class="key key--special key--shift"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+                <div class="key">z</div>
+                <div class="key">x</div>
+                <div class="key">c</div>
+                <div class="key">v</div>
+                <div class="key">b</div>
+                <div class="key">n</div>
+                <div class="key">m</div>
+                <div class="key key--special key--delete"><i class="fa-solid fa-delete-left"></i></div>
+            </div>
+            <div class="keyboard__row row-special">
+                <div class="key key--special">123</div>
+                <div class="key key--special key--globe"><i class="fa-solid fa-globe"></i></div>
+                <div class="key key--space">space</div>
+                <div class="key key--special key--return">return</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

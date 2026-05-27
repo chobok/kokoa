@@ -1,0 +1,134 @@
+.screen-header__gear {
+    position: relative;
+}
+.screen-header__gear .dot {
+    top: -5px;
+    right: -5px;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+}
+.icon-row__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-row__icon i {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.icon-row__icon span {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.recommended-friends {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.recommended-friends__title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+    margin-top: 0;
+    font-weight: 500;
+}
+.recommended-friends__text {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 90px 0;
+}
+
+.open-chat {
+    padding: 0px 20px;
+}
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+    margin-bottom: 25px;
+}
+.open-chat__header h4 {
+    margin: 0;
+    font-weight: 500;
+}
+.open-chat__header span {
+    font-size: 13px;
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.open-post__title {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+.open-post__hashtags {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0 0 8px 0;
+}
+.open-post__members {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.open-post__member-avatar {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #eee; 
+}
+.open-post__divider {
+    width: 1px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 5px;
+}
+.open-post__member-status {
+    color: #ffbbed;
+}
+
+.open-post__photo {
+    position: relative;
+}
+.open-post__photo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #eee;
+    object-fit: cover;
+}
+.open-post__heart-count {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+.open-post__heart-count i {
+    font-size: 10px;
+    margin-right: 5px;
+}
