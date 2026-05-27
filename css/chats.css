@@ -1,0 +1,5 @@
+.user-component__link {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* a태그가 전체 영역을 다 차지하게 함 */
+}
